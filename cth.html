@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML Table</title>
+	<style>
+		table, th, td, tr
+		{
+			border: 2px solid darkgoldenrod;
+			border-collapse: collapse;
+		}
+		th, td, tr
+		{
+			<font-style: italic;
+			padding: 4px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+<h3 style="text-align: center;">Basic Table</h3>
+	<table style="width: 100%">
+		<caption style="color: blueviolet;">This is basic table</caption>
+		<tr>
+			<th>Name</th>
+		    <th>Phone Number</th>
+		    <th>Email</th>
+		</tr>
+		<tr>
+			<td>Muhamad Ikmal Aizzat</td>
+			<td>0179646553</td>
+			<td>2019440168@student.uitm.edu.my</td>
+		</tr>
+		<tr>
+			<td><img src="images/chr.jpg"></td>
+			<td>0129526587</td>
+			<td>ikmalaizzat54@gmail.com</td>
+		</tr>
+	</table>
+	<p></p>
+	<table style="width: 100%">
+		<caption></caption>
+		
+	</table>
+	<p></p>
+	<h3 style="text-align: center;">HTML Table Colspan (Merge Row)</h3>
+	<table style="width: 100%">
+		<caption>This is using colspan</caption>
+	<tr>
+		<th colspan="2">Name</th>
+		<th>University</th>
+	</tr>
+	</table>
+
+	<p></p>
+	<table style="width: 100%">
+		<h3 style="text-align:center;">HTML Table Rowspan</h3>
+		<caption>This is using Rowspan ( Merge Column)</caption>
+		<tr>
+			<th>Name</th>
+			<td>Ikmal Aizzat</th>
+		</tr>
+		<tr>
+			<th rowspan="2">Email</th>
+			<td>2019440168@student.uitm.edu.my</td>
+		</tr>
+		<tr>
+			<th>ikmalaizzat@gmail.com</th>
+		</tr>
+
+</body>
+</html>
