@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Exercise 10: JavaScripts</title>
+</head>
+<body>
+	<h3>Question 1</h3>
+    <p id="content">Welcome to my page</p>
+	<button type="button"onclick='document.getElementById("content").innerHTML = "I love to learn web design"'>Tekan butan ini</button>
+
+	<h3>Question 2</h3>
+	<p id="style1">Hello! Welcome to Faculty of Information Management</p>
+	<script>
+		function myStyle()
+		{
+			document.getElementById("style1").style.fontSize = "25px";
+			document.getElementById("style1").style.fontFamily = "courier new";
+			document.getElementById("style1").style.color = "blue";
+			document.getElementById("style1").style.backgroundColor = "yellow";
+		}
+	</script>
+	<button type="button"onclick="myStyle()">Click Me</button>
+
+
+	<p><h3>Question 3</h3></p>
+	<script>
+		function gambar(a)
+		{
+			var gambar; 
+			if (a == 0)
+			{
+				gambar = "smile1.jpg"
+			}
+			else
+			{
+				gambar = "sad.png1.png"
+			}
+			document.getElementById('image').src = gambar
+		}
+	</script>
+
+	<img src="smile1.jpg ,sad.png1.png " id="image" width="100px" height="100px">
+	<p>
+		<button type="button" onclick="gambar(0)">Smile</button>
+		<button type="button" onclick="gambar(1)">Sad</button>
+	</p>
+
+	<h3>Question 4</h3>
+	<button onclick="submit()">Welcome!</button>
+
+	<script>
+		function submit()
+		{
+			alert("Selamat datang ke kelas IMD311")
+		}
+	</script>
+
+	<h3>Question 5</h3>
+	<button onclick="myconfirm()">Your Response</button>
+	<p id="demo"></p>
+	<script>
+		function myconfirm()
+		{
+			var b;
+			if (confirm("Press a button"))
+			{
+				b = "Thank you for your response!";
+			}
+			else 
+			{
+				b = "We will be waiting for you!";
+			}
+			document.getElementById("demo").innerHTML = b;
+		}
+	</script>
+
+	<h3>Question 6</h3>
+	<button onclick="myprompt()">Please insert your birthday</button>
+	<p id="prompt1"></p>
+	<script>
+		function myprompt()
+		{
+			let text;
+			let name = prompt("Your birthday is on :","")
+			if (name == null || name =="")
+			{
+				text = "We will be waiting for you!";
+			}
+			else
+			{
+				text ="Your birthday is on";
+			}
+			document.getElementById("prompt1").innerHTML = text;
+		}
+	</script>
+
+
+</body>
+</html>
