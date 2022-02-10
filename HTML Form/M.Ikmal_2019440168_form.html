@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML Form Input Type</title>
+</head>
+<body>
+	<h1>HTML Form</h1>
+
+	<!-- <form> content/ element </form> -->
+
+	<h2>Input Type: text</h2>
+	<form>
+		<label for="name">Name :</label><br>
+		<input type="text" name="name" id="name"><br>
+		<label for="age">Age: </label><br>
+		<input type="text" name="age" id="age"><br>
+
+		<label for="gender">Gender: </label><br>
+		<input type="text" name="gender" id="gender"><br>
+		<label for="address">Address: </label><br>
+		<input type="text" name="address" id="address"><br>
+		<label for="campus">Campus: </label><br>
+		<input type="text" name="campus" id="campus"><br>
+		<label for="mentor">Mentor: </label><br>
+		<input type="text" name="mentor" id="mentor"><br>
+		<label for="visit_pic">Visitor picture:</label><br>
+		<input type="text" name="visit_pic" id="visit_pic"><br>
+	</form>
+        
+        <h2>Input type: Radio Button</h2>
+        <p>Choose your Gender: </p>
+        <form>
+        	<input type="radio" name="gender" id="male" value="Male">
+        	<label for="male">Male</label>
+        	<input type="radio" name="gender" id="female" value="Female">
+        	<label for="female">Female</label>
+        </form>
+
+        <h2>Input type: Checkbox</h2>
+        <p>Please select your course</p>
+        <form>
+        	<input type="Checkbox" name="course" id="IMD311" value="IMD311">
+        	<label for="IMD311">IMD311</label>
+        	<input type="Checkbox" name="course" id="IMD245" value="IMD245">
+        	<label for="IMD245">IMD245</label>
+        </form>
+
+        <h2>Input type: Password</h2>
+        <form>
+        	<label for="username">Username :</label>
+        	<input type="text" name="username" id="username">
+        	<label for="password">Password :</label>
+        	<input type="password" name="password" id="password" maxlength="8">
+        </form>
+
+        <h2>Input type: Date/ Date time/ Month/ Week</h2>
+        <form>
+        	<label for="date">Date of Birth :</label>
+        	<input type="date" name="date" id="date"><br>
+        	<label for="datetime">Date time :</label>
+        	<input type="datetime-local" name="datetime" id="datetime"><br>
+        	<label for="month">Month :</label>
+        	<input type="month" name="month" id="month"><br>
+        	<label for="week">Week :</label>
+        	<input type="week" name="week" id="week"><br>
+        </form>
+
+        <h2>Input type: email/URL</h2>
+        <form>
+        	<label for="email">Please enter your email</label>
+        	<input type="email" name="email" id="email"><br>
+        	<label for="url">Please enter your Personal URL</label>
+            <input type="personal_url" name="personal_url" id="personal_url"><br>
+        </form>
+
+        <h2>Input type: File</h2>
+        <form>
+        	<label for="file">Select a file</label>
+        	<input type="file" name="file" id="file">
+        </form>
+
+        <h2>Text area</h2>
+        <form>
+        	<h2>Describe your self :</h2>
+        	<textarea name="yourself" style="width: 70%; height: 150px;">
+        		
+        	</textarea>
+        </form>
+
+        <h2>Input Type: Dropdown</h2>
+        <form>
+        	<label for="state">Select State:</label>
+        	<select id="select" name="state">
+        		<option value="johor">Johor</option>
+        		<option value="kedah">Kedah</option>
+        		<option value="pahang" selected>Pahang</option>
+        		<option value="terengganu">Terengganu</option>
+        		<option value="kelantan">Kelantan</option>
+        	</select>
+        </form>
+
+        <h2>Input type:Hidden</h2>
+        <form>
+		    <label for="name">Name :</label><br>
+		    <input type="text" name="name" id="name"><br>
+		    <label for="age">Age: </label><br>
+		    <input type="text" name="age" id="age"><br>
+		    <input type="hidden" name="role" id="role" value="age">
+	    </form>
+
+
+</body>
+</html>

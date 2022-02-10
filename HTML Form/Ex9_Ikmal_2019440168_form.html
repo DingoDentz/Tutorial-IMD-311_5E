@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML Form Input Type</title>
+</head>
+<body>
+	<h1 style="color: rebeccapurple; text-align: center;">Exercise 9: HTML Form</h1>
+
+    <form>
+		<label for="name">Name :</label><br>
+		<input type="text" name="name" id="name"><br>
+		<label for="age">Age: </label><br>
+		<input type="text" name="age" id="age"><br>
+	</form>
+
+    <p>Choose your Gender: </p>
+    <form>
+        <input type="radio" name="gender" id="male" value="Male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="Female">
+        <label for="female">Female</label>
+    </form>
+    <p></p>
+    <form>
+    	<input type="checkbox" name="address" id="address">
+    	<label for="address">Address</label>
+    </form>
+    <form>
+        <p>Address:</p>
+        <textarea name="yourself" style="width: 50%; height: 80px;text-align: justify;">
+        </textarea>
+    </form>
+
+    <form>
+        <label for="state">Select Campus:</label>
+        <select id="select" name="state">
+        	<option value="johor">Campus Kelantan</option>
+        	<option value="kedah">Campus Johor</option>
+        	<option value="pahang" selected>Campus Shah Alam</option>
+        	<option value="terengganu">Campus Sarawak</option>
+        	<option value="kedah">Campus Kedah</option>
+        </select>
+    </form>
+    <p>Select Mentor</p>
+        <form>
+        	<input type="radio" name="mentor" id="mentor" value="mentor">
+        	<label for="mentor">PM Ts Dr Ghazali Osman</label><br>
+        	<input type="radio" name="mentor" id="mentor" value="mentor">
+        	<label for="mentor">PM Dr Mohd Nasir Ismail</label><br>
+            <input type="radio" name="mentor" id="mentor" value="mentor">
+            <label for="mentor">Dr Mohamad Rahimi Mohd Rosman</label><br>
+            <input type="radio" name="mentor" id="mentor" value="mentor">
+            <label for="mentor">Puan Nurshaliza Sapiai</label><br>
+            <input type="radio" name="mentor" id="mentor" value="mentor">
+            <label for="mentor">Puan Siti Aswani Mohd Ghazali</label><br>
+            <input type="radio" name="mentor" id="mentor" value="mentor">
+            <label for="mentor">Puan Zaila Idris</label><br>
+            <input type="radio" name="mentor" id="mentor" value="mentor">
+            <label for="mentor">Puan Khadijah Abdul Rahman</label><br>
+        </form>
+
